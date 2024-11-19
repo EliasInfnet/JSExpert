@@ -1,0 +1,14 @@
+{
+  "name": "class_01-mocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "author": "",
+  "license": "ISC"
+}
