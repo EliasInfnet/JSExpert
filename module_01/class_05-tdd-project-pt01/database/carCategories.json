@@ -1,0 +1,11 @@
+[
+  {
+    "id": "5f003dd4-09a6-46ca-8e79-a683d4256f58",
+    "name": "Jeep Silverado",
+    "carIds": [
+      "6b85fca7-fbed-4c74-924b-9f219f9a4bee",
+      "46c580eb-a898-4473-bdb9-3ba29a79a3d8"
+    ],
+    "price": 30
+  }
+]
