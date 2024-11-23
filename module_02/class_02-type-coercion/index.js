@@ -17,5 +17,3 @@ const item = {
   },
 }
 
-console.log(String(item))
-console.log(Number(item))
