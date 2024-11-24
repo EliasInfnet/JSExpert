@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:dev": "npx mocha --parallel -w test/*.test.js",
+    "test": "npx mocha --parallel test/*.test.js",
+    "test:cov": "npx nyc npx mocha -r reify --parallel test/*.test.js"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +17,17 @@
     "node": "14"
   },
   "dependencies": {
+    "chai": "^4.5.0",
     "chalk": "^4.1.2",
     "chalk-table": "^1.0.2",
-    "draftlog": "^1.0.13"
+    "draftlog": "^1.0.13",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "@types/chai": "^4.3.20",
+    "nodemon": "^3.1.7",
+    "reify": "^0.20.12"
   }
 }
