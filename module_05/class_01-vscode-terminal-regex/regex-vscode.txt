@@ -1,0 +1,14 @@
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.456.789-30
+392.193.123-20
+536.561.772-19
+
+replace [.-] - empty
+
+Nunes, Elias
+Gomes, Laila
+Johnson, Jose
+
+replace (\w+),\s(\w+)
+{firstName:"$2",lastName:"$1"}
